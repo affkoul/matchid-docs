@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "types": ["vite/client"],
+      "target": "esnext",
+      "module": "esnext",
+      "declaration": true,
+      "declarationDir": "./dist",
+      "outDir": "./dist",
+      "strict": true,
+      "jsx": "react-jsx",         // 支持 JSX 语法
+      "moduleResolution": "node", // 使用 Node.js 风格的模块解析
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    },
+    "include": ["src", "vite-env.d.ts", "src/types"]
+  }
+  
