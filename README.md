@@ -7,15 +7,15 @@ Official documentation to help you integrate **MatchID** into your web applicati
 ## 📘 Table of Contents
 
 - [MatchID SDK Documentation](https://docs.matchid.ai/)
-  - [📘 Table of Contents](#-table-of-contents)
-  - [🧾 About MatchID](#-about-matchid)
-  - [🛠️ Client Side SDK for Web Apps](#️-client-side-sdk-for-web-apps)
-  - [✨ Features](#-features)
-  - [🚀 Migrating to MatchID for Telegram Mini Apps](#-migrating-to-matchid-for-telegram-mini-apps)
-  - [📱 App WebView Auth for Mobile Apps](#-app-webview-auth-for-mobile-apps)
-  - [🪪 Web3 Passport](#-web3-passport)
-  - [📦 Installation](#-installation)
-- [or](#or)
+  - [📘 Table of Contents](https://github.com/affkoul/matchid-docs#-table-of-contents)
+  - [🧾 About MatchID](https://docs.matchid.ai/)
+  - [🛠️ Client Side SDK for Web Apps](https://docs.matchid.ai/react/)
+  - [✨ Features](https://docs.matchid.ai/features/)
+  - [🚀 Migrating to MatchID for Telegram Mini Apps](https://docs.matchid.ai/migrate/telegramMiniApp.html)
+  - [📱 App WebView Auth for Mobile Apps](https://docs.matchid.ai/features/app-webview-auth.html)
+  - [🪪 Web3 Passport](https://docs.matchid.ai/passport/developer.html)
+  - [📦 Installation](https://github.com/affkoul/matchid-docs#-installation)
+- [or](https://developer.matchid.ai/)
 
 ---
 
@@ -33,7 +33,7 @@ Learn how to install and use the MatchID SDK in React or other frontend framewor
 - Fetching user profiles
 - Handling login state across the ecosystem
 
-[See full guide →](./client-sdk.md)
+[See full guide →](https://docs.matchid.ai/react/)
 
 ---
 
@@ -52,7 +52,7 @@ Learn how to install and use the MatchID SDK in React or other frontend framewor
 
 A detailed guide on how to integrate MatchID inside Telegram’s WebApp context, enabling full authentication and user identity flow within Telegram Mini Apps.
 
-[Migration Guide →](./telegram-migration.md)
+[Migration Guide →](https://docs.matchid.ai/migrate/telegramMiniApp.html)
 
 ---
 
@@ -66,7 +66,7 @@ Support for native and hybrid mobile apps using WebViews to authenticate users s
 
 Issue and verify **Soulbound Tokens (SBTs)** for users based on behavior, identity, or campaign actions. Includes APIs for minting and reading on-chain credentials.
 
-[Explore Passport →](./passport.md)
+[Explore Passport →](https://docs.matchid.ai/passport/developer.html)
 
 ---
 
