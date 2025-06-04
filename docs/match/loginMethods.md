@@ -23,3 +23,4 @@ Login methods are used to authenticate users.You can set up login methods in Log
 | SOL  | sol   |
 | BTC  | btc   |
 | TRON | tron  |
+| TON  | ton   |

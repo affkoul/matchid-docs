@@ -29,3 +29,22 @@ This parameter corresponds to the appid and supports passing in main (production
 ## endpoints
 
 `endpoints` is used to configure API request URLs. Typically, you do not need to set this parameter, as the default configuration should suffice for most scenarios. 
+
+
+## wallet
+
+`wallet` is used to configure the wallet. Currently, the wallet only has `type` params.
+
+- type: `UserPasscode` or `Base`.If you choose `Base`,we will auto generate a wallet for user without password. If you choose `UserPasscode`, users need to enter the password to generate the wallets.
+
+```typescript
+import {MatchProvider} from "@matchain/matchid-sdk-react";
+
+const App = () => {
+    return (
+        <MatchProvider appid="YourAppId" wallet={{type:"UserPasscode"}} >
+        {/* Your App */}
+        </MatchProvider>
+    );
+};
+```

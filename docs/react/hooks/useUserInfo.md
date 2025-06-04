@@ -45,6 +45,16 @@ const { useUserInfo } = Hooks;
 
     - **Parameters**:
         - `method`: The account type to bind (e.g., "evm", "google", "telegram").
+      
+- **`bindCex(type: CEXType)`**: Binds a cex API.
+
+    - **Parameters**:
+        - `type`: The account type to bind (e.g., "Gate", "Coinbase", "Kucoin").You can find all CEX Type in [here](/match/cexType)
+- 
+- **`getAuthInfo(method: LoginMethodType)`**: Get the user's authentication information.If users have approved the authentication information, the DApp can get the user's information.
+
+    - **Parameters**:
+        - `method`: The login method (e.g., "evm", "google", "twitter", "telegram").
 
 ### Properties
 

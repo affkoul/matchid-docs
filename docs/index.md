@@ -158,7 +158,7 @@ html.dark .card-description {
     </div>
     <div style="margin-top: 10px; color: 5D4037; fontSize: 14px;">
       <p style="margin: 0">
-        We're finally introducing you to MatchID's embedded wallets. Check out the overview section under the security chapter of the docs to get started.
+        We're finally introducing you to <a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a>'s embedded wallets. Check out the overview section under the security chapter of the docs to get started.
       </p>
     </div>
   </div>
@@ -173,9 +173,9 @@ html.dark .card-description {
 
 ## Welcome
 
-<a href="https://matchid.ai" style="color: #3451b2; text-decoration: underline;">MatchID</a> builds user onboarding and embedded wallet infrastructure to enable better products built on crypto rails. This means embedding asset control within applications themselves to enable users, businesses, or machines to use digital assets through seamless product experiences.
+<a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a> builds user onboarding and embedded wallet infrastructure to enable better products built on crypto rails. This means embedding asset control within applications themselves to enable users, businesses, or machines to use digital assets through seamless product experiences.
 
-Use MatchID's client-side SDKs to authenticate users, provide embedded wallets for them, and prompt wallet usage.
+Use <a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a>'s client-side SDKs to authenticate users, provide embedded wallets for them, and prompt wallet usage.
 
 <div class="card-container">
   <!-- Card 1 -->
@@ -212,12 +212,12 @@ Use MatchID's client-side SDKs to authenticate users, provide embedded wallets f
 
 ## Using MatchID
 
-Broadly, MatchID enables:
+Broadly, <a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a> enables:
 
-- **User Onboarding**—MatchID helps developers onboard users regardless of their experience with crypto-based systems. This means libraries to authenticate them, help them connect their existing wallets and provision self-custodial embedded wallets for them if they don't already have one.
-- **Wallet Infrastructure**—Developers can also directly access MatchID’s bare-metal wallet APIs from our APIs using <a href="/api" style="color: #3451b2; text-decoration: underline;">MatchID API SDK</a> to provision and manage cross-chain wallets for any use case.
+- **User Onboarding**—<a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a> helps developers onboard users regardless of their experience with crypto-based systems. This means libraries to authenticate them, help them connect their existing wallets and provision self-custodial embedded wallets for them if they don't already have one.
+- **Wallet Infrastructure**—Developers can also directly access <a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a>’s bare-metal wallet APIs from our APIs using <a href="/api" style="color: #3451b2; text-decoration: underline;">MatchID API SDK</a> to provision and manage cross-chain wallets for any use case.
 
-Where embedded wallets run on user devices by default, our server wallets reconstitute keys in secure enclaves controlled by the wallet owner. The private keys for both embedded and server wallets are never stored by MatchID, encrypted or otherwise. Key splitting ensures flexible recovery systems for all use cases, bringing together enterprise-grade security and consumer-grade performance.
+Where embedded wallets run on user devices by default, our server wallets reconstitute keys in secure enclaves controlled by the wallet owner. The private keys for both embedded and server wallets are never stored by <a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a>, encrypted or otherwise. Key splitting ensures flexible recovery systems for all use cases, bringing together enterprise-grade security and consumer-grade performance.
 
 ## Explore by SDK
 
@@ -274,23 +274,23 @@ Where embedded wallets run on user devices by default, our server wallets recons
 
 ## Engineering Principles
 
-At MatchID, we believe technical decisions are moral decisions. Below are the principles that guide our engineering decisions.
+At <a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a>, we believe technical decisions are moral decisions. Below are the principles that guide our engineering decisions.
 
 ### Secure
-Nothing is more important than your user's security. MatchID’s key management system uses Shamir’s secret sharing to shard user’s private keys such that neither your app, nor MatchID, can ever access a user’s keys. Keys are only ever reconstituted on the user’s device at the point of signing a message or sending a transaction.
+Nothing is more important than your user's security. <a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a>’s key management system uses Shamir’s secret sharing to shard user’s private keys such that neither your app, nor <a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a>, can ever access a user’s keys. Keys are only ever reconstituted on the user’s device at the point of signing a message or sending a transaction.
 
-MatchID regularly undergoes rigorous audits to ensure your users control and privacy over their wallets.
+<a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a> regularly undergoes rigorous audits to ensure your users control and privacy over their wallets.
 
 ### Flexible
-MatchID gives your application low level access to users and their wallets to support a fully customized product experience. Your application can access MatchID's functionality all the way down to the API level, supporting unique wallet flows including provisioning multiple wallets per user.
+<a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a> gives your application low level access to users and their wallets to support a fully customized product experience. Your application can access <a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a>'s functionality all the way down to the API level, supporting unique wallet flows including provisioning multiple wallets per user.
 
 ### Easy to Use
-MatchID has out of the box UIs so your app can support authentication and wallet flows in minutes. These UIs are highly customizable and can even be fully white-labeled. This means access to out of the box funding methods, smart wallet creation pipelines, and more.
+<a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a> has out of the box UIs so your app can support authentication and wallet flows in minutes. These UIs are highly customizable and can even be fully white-labeled. This means access to out of the box funding methods, smart wallet creation pipelines, and more.
 
 ### Portable
-MatchID is compatible with any chain your application operates on. Your application can provision embedded wallets (or link external wallets to a MatchID account) on Solana, Ethereum, and all EVM compatible chains. MatchID is at the bleeding edge of distributed systems so when you want to build on a new chain, that chain is already supported.
+<a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a> is compatible with any chain your application operates on. Your application can provision embedded wallets (or link external wallets to a <a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a> account) on Solana, Ethereum, and all EVM compatible chains. <a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a> is at the bleeding edge of distributed systems so when you want to build on a new chain, that chain is already supported.
 
 
-With layers of customizability, MatchID supports a wide range of product experiences.
+With layers of customizability, <a href="https://developer.matchid.ai/dashboard/" style="color: #3451b2; text-decoration: underline;">MatchID</a> supports a wide range of product experiences.
 
 

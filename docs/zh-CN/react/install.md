@@ -24,7 +24,7 @@ import {MatchProvider} from "@matchain/matchid-sdk-react";
 
 const App = () => {
   return (
-     <MatchProvider appid="11111" env="main">
+     <MatchProvider appid="YourAppId" wallet={{type:"UserPasscode"}} >
        {/* Your App */}
      </MatchProvider>
   );

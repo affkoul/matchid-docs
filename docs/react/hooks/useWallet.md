@@ -11,7 +11,7 @@ The `useWallet` hook provides functionalities related to wallet management and s
 To use the `useWallet` hook, import it into your component:
 
 ```typescript
-import { Hooks } from '@matchain/matchid-sdk-react';
+import { useWallet } from '@matchain/matchid-sdk-react/hooks';
 const { useWallet } = Hooks;
 ```
 
@@ -20,28 +20,11 @@ const { useWallet } = Hooks;
 
 ### Methods
 
-- **`initWallet(params: { address: string, did: string })`**: Initializes the wallet with the provided address and DID.This method will be called automatically when the user logs in.
-
-    - **Parameters**:
-        - `address`: The wallet address.
-        - `did`: The user's Decentralized ID (DID).
-
-- **`generateWallet(params: { did: string, userPasscode: string })`**: Generates a new wallet using the specified DID and user passcode.This method will be called automatically when the user first logs in.
-
-    - **Parameters**:
-        - `did`: The user's Decentralized ID (DID).
-        - `userPasscode`: The user-defined passcode for wallet recovery.
+- **`createWalletClient(params)`**: Initializes a wallet client. For more details, please refer to the Viem Wallet Client documentation. Note that you do not need to pass the account parameter.
 
 - **`isRecovered()`**: Checks if the wallet has been recovered.
 
     - **Returns**: A boolean indicating whether the wallet is recovered.
-
-- **`recoveryWallet(chainType: ChainType | undefined, recoveryType: RecoveryType, userPasscode?: string)`**: Recovers the wallet using the specified chain type, recovery type, and optional user passcode.This method will be called automatically when the user changes their device.
-
-    - **Parameters**:
-        - `chainType`: The type of blockchain (e.g., "ethereum").
-        - `recoveryType`: The method of recovery (e.g., "user_passcode_recovery_key").
-        - `userPasscode` (optional): The user-defined passcode for recovery.
 
 - **`signMessage(message: SignableMessage, type?: ChainType)`**: Signs a message using the specified chain type.
 
@@ -62,6 +45,8 @@ const { useWallet } = Hooks;
 
 ### Properties
 
+- **`walletReady`**: A boolean indicating whether the wallet is ready for use.
+
 - **`address`**: The current wallet address.
 
 - **`evmAccount`**: An instance of the `Account` object from `viem`, representing the Ethereum account. This includes methods for signing messages and transactions.
@@ -70,37 +55,22 @@ const { useWallet } = Hooks;
 
 Here’s how you can use the `useWallet` hook in a React component:
 
-```typescript
+```tsx
 import React from 'react';
 import { Hooks } from '@matchain/matchid-sdk-react';
-const { useUserInfo } = Hooks;
+const { useWallet } = Hooks;
 
 function WalletManager() {
     const {
-        initWallet,
-        generateWallet,
         isRecovered,
         recoveryWallet,
         signMessage,
         signTransaction,
         address,
         evmAccount,
+        createWalletClient
     } = useWallet();
-
-    const handleInitWallet = async () => {
-        await initWallet({
-            address: '0xYourAddress',
-            did: 'your-did'
-        });
-    };
-
-    const handleGenerateWallet = async () => {
-        const newAddress = await generateWallet({
-            did: 'your-did',
-            userPasscode: 'your-passcode'
-        });
-        console.log('New wallet address:', newAddress);
-    };
+    
 
     const handleSignMessage = async () => {
         const signedMessage = await signMessage({ message: 'Hello, world!' });
@@ -115,13 +85,25 @@ function WalletManager() {
         });
         console.log('Signed transaction:', signedTransaction);
     };
+    
+    const sendTransaction = async () =>{
+        const walletClient = createWalletClient({
+            chain: chain,
+            transport: http(),
+        })
+        const hash = walletClient.sendTransaction({
+            to: '0xRecipientAddress',
+            value: '1000000000000000000', // 1 ETH
+            data: '0x'
+        })
+        console.log('Transaction hash:', hash);
+    }
 
     return (
         <div>
-            <button onClick={handleInitWallet}>Initialize Wallet</button>
-            <button onClick={handleGenerateWallet}>Generate Wallet</button>
             <button onClick={handleSignMessage}>Sign Message</button>
             <button onClick={handleSignTransaction}>Sign Transaction</button>
+            <button onClick={sendTransaction}>Send Transaction</button>
             <p>Current Address: {address}</p>
             <p>EVM Account: {evmAccount ? evmAccount.address : 'Not initialized'}</p>
         </div>

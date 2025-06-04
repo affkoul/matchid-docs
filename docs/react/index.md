@@ -19,12 +19,12 @@ yarn add @matchain/matchid-sdk-react
 
 You can visit [MatchID Developer](https://developer.matchid.ai) to build you application and then package your application using MatchProvider.
 
-```typescript
+```tsx
 import {MatchProvider} from "@matchain/matchid-sdk-react";
 
 const App = () => {
   return (
-     <MatchProvider appid="YourAppId">
+     <MatchProvider appid="YourAppId" wallet={{type:"UserPasscode"}} >
        {/* Your App */}
      </MatchProvider>
   );
@@ -32,6 +32,22 @@ const App = () => {
 ```
 
 You can refer to the next chapter for the configuration items of the provider.
+
+Or you may use the following code to import the WagmiProvider.
+
+```tsx
+import {MatchProvider,wagmiConfig} from "@matchain/matchid-sdk-react";
+
+const App = () => {
+  return (
+    <WagmiProvider config={wagmiConfig}>
+      <MatchProvider appid="YourAppId" wallet={{type:"UserPasscode"}} >
+        {/* Your App */}
+        </MatchProvider>
+    </WagmiProvider>
+  );
+};
+```
 
 ## CSS
 
