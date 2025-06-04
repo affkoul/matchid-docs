@@ -6,7 +6,7 @@ Official documentation to help you integrate **MatchID** into your web applicati
 
 ## 📘 Table of Contents
 
-- [MatchID SDK Documentation](#matchid-sdk-documentation)
+- [MatchID SDK Documentation](https://docs.matchid.ai/)
   - [📘 Table of Contents](#-table-of-contents)
   - [🧾 About MatchID](#-about-matchid)
   - [🛠️ Client Side SDK for Web Apps](#️-client-side-sdk-for-web-apps)
