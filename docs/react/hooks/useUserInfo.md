@@ -76,7 +76,9 @@ const { useUserInfo } = Hooks;
 
 Here’s how you can use the `useUserInfo` hook in a React component:
 
-```typescript
+<span id="getauthinfo-example"></span>
+
+```typescript {18-21}
 import React from 'react';
 import { Hooks } from '@matchain/matchid-sdk-react';
 const { useUserInfo } = Hooks;
@@ -89,10 +91,15 @@ function UserProfile() {
         username,
         getLoginEmailCode,
         refreshOverview,
+        getAuthInfo
     } = useUserInfo();
 
     const handleLogin = async (method: string) => {
         await login(method);
+        const authInfo = await getAuthInfo(method);
+        console.log('✅ Auth Info:', authInfo);
+        console.log('📦 did:', authInfo?.did);
+        console.log('🔑 auth_key:', authInfo?.auth_key);
         console.log('Logged in with method:', method);
     };
 
@@ -128,3 +135,25 @@ export default UserProfile;
 ## Conclusion
 
 The `useUserInfo` hook provides a robust set of methods and properties to manage user authentication and information in your decentralized application. Use the provided methods to log in, log out, refresh user information, and bind additional accounts. This hook simplifies user management and ensures seamless integration with various authentication methods.
+
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  const hash = decodeURIComponent(window.location.hash);
+  if (hash !== '#getauthinfo-example') return;
+
+  const target = document.querySelector('#getauthinfo-example + pre code .line:nth-child(3)');
+  if (target) {
+    const parent = target.parentElement;
+    parent.classList.add('code-flash', 'animate');
+
+    setTimeout(() => {
+      parent.classList.remove('animate');
+    }, 1000);
+
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+});
+</script>
+

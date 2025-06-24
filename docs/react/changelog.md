@@ -1,8 +1,27 @@
 ---
+title: Changelog
 outline: deep
 ---
 
 # Changelog
+
+## 2025-06-23 0.0.27
+
+### Add
+
+- Added `User bind list demo` and `User auth info demo` for showcasing how to use MatchID API services
+
+### Update
+
+- Updated `useClient` and `useUserInfo`
+
+## 2025-06-06 0.0.26
+
+### Add
+
+- Added `useClient`, `useReadContract`, and `useWriteContract` hooks for on-chain wallet operations
+- Added real-world demo: `walletOpsDemo`
+- Added Improved MatchID SDK integration with Viem clients documentation and demo
 
 ## 2024-12-03 0.0.25
 

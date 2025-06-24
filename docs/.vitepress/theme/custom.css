@@ -2,3 +2,67 @@
     width:100% !important;
     max-width: none !important;
 }
+
+.code-flash::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    background: linear-gradient(90deg, #ffeeba, #fff8dc);
+    transition: width 0.8s ease-out;
+    border-radius: 4px;
+}
+
+.code-flash.animate::before {
+    width: 100%;
+}
+
+/* highlight + flash animation */
+.code-flash {
+    position: relative;
+    border-left: 3px solid orange;
+    overflow: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+    .code-flash {
+        background-color: #fff8dc;
+    }
+
+    @keyframes flash-highlight {
+        0% {
+            background-color: #fff8dc;
+        }
+
+        50% {
+            background-color: #ffeeba;
+        }
+
+        100% {
+            background-color: #fff8dc;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .code-flash {
+        background-color: #2e2a10;
+    }
+
+    @keyframes flash-highlight {
+        0% {
+            background-color: #2e2a10;
+        }
+
+        50% {
+            background-color: #4d3c14;
+        }
+
+        100% {
+            background-color: #2e2a10;
+        }
+    } 
+}

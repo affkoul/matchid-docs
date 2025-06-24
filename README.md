@@ -1,20 +1,20 @@
 # MatchID SDK Documentation
 
-Official documentation to help you integrate **MatchID** into your web applications, Telegram Mini Apps, and Mobile Apps. MatchID enables seamless Web3 identity and passport solutions with powerful tools for authentication, authorization, wallet services, and user data sovereignty.
+Official documentation to help you integrate **MatchID** into your web applications, Telegram Mini Apps, and Mobile Apps. MatchID enables seamless Web3 identity and passport solutions with powerful tools for authentication, authorization, wallet services, and AI user data sovereignty and monetization.
 
 ---
 
 ## 📘 Table of Contents
 
 - [MatchID SDK Documentation](https://docs.matchid.ai/)
-  - [📘 Table of Contents](https://github.com/affkoul/matchid-docs#-table-of-contents)
+  - [📘 Table of Contents](https://github.com/matchidai/docs/#-table-of-contents)
   - [🧾 About MatchID](https://docs.matchid.ai/)
   - [🛠️ Client Side SDK for Web Apps](https://docs.matchid.ai/react/)
   - [✨ Features](https://docs.matchid.ai/features/)
   - [🚀 Migrating to MatchID for Telegram Mini Apps](https://docs.matchid.ai/migrate/telegramMiniApp.html)
   - [📱 App WebView Auth for Mobile Apps](https://docs.matchid.ai/features/app-webview-auth.html)
   - [🪪 Web3 Passport](https://docs.matchid.ai/passport/developer.html)
-  - [📦 Installation](https://github.com/affkoul/matchid-docs#-installation)
+  - [📦 Installation](https://github.com/matchidai/docs/#-installation)
 - [or](https://developer.matchid.ai/)
 
 ---
@@ -73,6 +73,6 @@ Issue and verify **Soulbound Tokens (SBTs)** for users based on behavior, identi
 ## 📦 Installation
 
 ```bash
-npm install @matchain/mid
+npm install @matchain/matchid-sdk-react
 # or
-yarn add @matchain/mid
+yarn add @matchain/matchid-sdk-react
