@@ -4,6 +4,18 @@ outline: deep
 
 # Installation
 
+## Major Dependencies Targets
+
+Must add the following to your package.json before installing the SDK.
+
+```js
+  "resolutions": {
+    "@rainbow-me/rainbowkit": "2.2.7",
+    "viem": "^2.29.0",
+    "wagmi": "^2.15.2"
+  },
+```
+
 ## QuickStart
 
 Install the MatchID React SDK with one of the following commands:
