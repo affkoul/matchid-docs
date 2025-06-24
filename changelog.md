@@ -1,6 +1,10 @@
 # 1.0.0 (2025-06-24)
 
 
+
+# 1.0.0 (2025-06-24)
+
+
 ### Bug Fixes
 
 * build ([929171d](https://github.com/matchidai/docs/commit/929171d7b9120779c29cc2376ecb1821d27f01ad))
