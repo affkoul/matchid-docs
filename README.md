@@ -7,14 +7,14 @@ Official documentation to help you integrate **MatchID** into your web applicati
 ## 📘 Table of Contents
 
 - [MatchID SDK Documentation](https://docs.matchid.ai/)
-  - [📘 Table of Contents](https://github.com/matchidai/docs/#-table-of-contents)
+  - [📘 Table of Contents](https://github.com/affkoul/matchid-docs#-table-of-contents)
   - [🧾 About MatchID](https://docs.matchid.ai/)
   - [🛠️ Client Side SDK for Web Apps](https://docs.matchid.ai/react/)
   - [✨ Features](https://docs.matchid.ai/features/)
   - [🚀 Migrating to MatchID for Telegram Mini Apps](https://docs.matchid.ai/migrate/telegramMiniApp.html)
   - [📱 App WebView Auth for Mobile Apps](https://docs.matchid.ai/features/app-webview-auth.html)
   - [🪪 Web3 Passport](https://docs.matchid.ai/passport/developer.html)
-  - [📦 Installation](https://github.com/matchidai/docs/#-installation)
+  - [📦 Installation](https://github.com/affkoul/matchid-docs#-installation)
 - [or](https://developer.matchid.ai/)
 
 ---
